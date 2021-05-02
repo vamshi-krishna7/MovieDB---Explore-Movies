@@ -45,6 +45,7 @@ export const loadMoreMovies = (page) => async(dispatch) => {
     })
 }
 
+// git 
 export const searchMovies = (searchTerm) => async(dispatch)=> {
     SetLoading()
     const res = await axios.get(`${process.env.REACT_APP_API_URL}/search/movie?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&query=${searchTerm}`);
