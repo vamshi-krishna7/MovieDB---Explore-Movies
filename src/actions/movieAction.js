@@ -9,7 +9,6 @@ export const popularMovies = () => async(dispatch) => {
     })
 }
 // get details
-// https://api.themoviedb.org/3/movie/{movie_id}?api_key=<<api_key>>&language=en-US
 export const CurrentMovieInformation = (id) => async(dispatch) => {
     const res = await axios.get(`${process.env.REACT_APP_API_URL}/movie/${id}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`)
     SetLoading()
