@@ -8,7 +8,7 @@ const PopularMoviesList = (props) => {
             <div className="single-movie-card">
                 <div className="single-movie-img-container">
                     <Link to={{pathname: `/movie/${id}`}}>
-                        <img className="single-movie-img" src={`https://image.tmdb.org/t/p/w500${props.singleMovie.poster_path}`}/>
+                        <img className="single-movie-img" src={`https://image.tmdb.org/t/p/w500${props.singleMovie.poster_path}`} alt="poster"/>
                     </Link>
                 </div>
             </div>

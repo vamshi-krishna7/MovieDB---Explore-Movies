@@ -5,6 +5,8 @@ import Home from './components/pages/home';
 import About from './components/pages/about';
 import Contact from './components/pages/contact';
 import MoviePage from './components/pages/moviePage';
+import Footer from './components/sections/footer';
+
 import React from 'react';
 
 const App = () => {
@@ -18,6 +20,7 @@ const App = () => {
             <Route path="/about" exact component={About} />
             <Route path="/contact" exact component={Contact} />
           </Switch>
+          <Footer />
       </Router>
     </React.Fragment>
   );

@@ -9,6 +9,7 @@ import {popularMovies, loadMoreMovies} from '../../actions/movieAction';
 
 const Home = (props) => {
     const {popular, loading, heroImage, popularMovies} = props;
+    
     useEffect(() => {
         popularMovies()
     }, [])

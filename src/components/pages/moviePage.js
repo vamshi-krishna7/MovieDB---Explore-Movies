@@ -11,16 +11,16 @@ const MoviePage = (props) => {
     useEffect(() => {
         CurrentMovieInformation(props.match.params.id)
         getActorsAndCrew(props.match.params.id)
-        
     }, [])
+    
     return (
             loading === true || CurrentMovieInfo === null || actors === null ? <Loading /> :
             (
             <Fragment>
-                <section className="movie-info-section" style={{backgroundImage: `url('https://image.tmdb.org/t/p/w1280${CurrentMovieInfo.backdrop_path}')`}}>
+                <section className="movie-info-section" style={{backgroundImage: `url('https://image.tmdb.org/t/p/w1280${CurrentMovieInfo.backdrop_path}')`}} alt="movie-poster">
                     <div className="movie-info-container">
                         <div className="movie-info-image-container">
-                            <img src={`https://image.tmdb.org/t/p/w1280${CurrentMovieInfo.poster_path}`}/>
+                            <img src={`https://image.tmdb.org/t/p/w1280${CurrentMovieInfo.poster_path}`} alt="movie-poster"/>
                         </div>
                         <div className="movie-info">
                             <h1>{CurrentMovieInfo.original_title}</h1>

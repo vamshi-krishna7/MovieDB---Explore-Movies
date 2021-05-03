@@ -11,7 +11,7 @@ const Actors = (props) => {
                 actors.map((singleActor) => (
                 <div className="actor-card" key={singleActor.id}>
                     <div className="actor-card-img-container">
-                        <img src={`https://image.tmdb.org/t/p/w185${singleActor.profile_path}`} alt="actors-photo"/>
+                        <img src={`https://image.tmdb.org/t/p/w185${singleActor.profile_path}`} alt="actors-pic"/>
                     </div> 
                     <div className="actor-details">
                         <h2>{singleActor.name}</h2>
